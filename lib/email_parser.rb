@@ -13,7 +13,7 @@ class EmailParser
   #  Official Lab Solution:
 
    def parse
-       binding.pry
+      binding.pry
      email.split.map do |email|
        email.split(',')
      end.flatten.uniq #never seen "end.something" before
