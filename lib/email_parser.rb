@@ -4,17 +4,17 @@ require 'pry'
 # unique email addresses. The delimiters to support are commas (',')
 # or whitespace (' ').
 class EmailParser
-  attr_accessor :email
+  attr_accessor :emails
 
    def initialize(emails)
-     @email = emails
+     @emails = emails
    end
 
   #  Official Lab Solution:
 
    def parse
       binding.pry
-     email.split.map do |email|
+     emails.split.map do |email|
        email.split(',')
      end.flatten.uniq #never seen "end.something" before
    end
