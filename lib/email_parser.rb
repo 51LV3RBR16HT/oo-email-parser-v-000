@@ -11,8 +11,9 @@ class EmailParser
    end
 
   #  Official Lab Solution:
-  binding.pry
+
    def parse
+       binding.pry
      email.split.map do |email|
        email.split(',')
      end.flatten.uniq #never seen "end.something" before
